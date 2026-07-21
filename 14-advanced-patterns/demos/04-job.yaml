@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: my-job
+spec:
+  completions: 3
+  parallelism: 2
+  template:
+    metadata:
+      labels:
+        app: my-job
+    spec:
+      containers:
+      - name: worker
+        image: busybox:1.36
+        command: ['sh', '-c', 'echo "Job completed"; sleep 5']
+      restartPolicy: Never
