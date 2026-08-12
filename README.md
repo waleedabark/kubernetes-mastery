@@ -1,58 +1,64 @@
-# Kubernetes Mastery - From Zero to Hero
+# Kubernetes Mastery
 
-A comprehensive, hands-on Kubernetes learning path with 15 progressive steps, each containing concepts, labs, and working demos.
+> A hands-on, from-zero-to-hero learning path for mastering Kubernetes.
 
-## Learning Path Overview
+This repository is a structured, 15-step curriculum that takes you from the fundamentals of Kubernetes architecture through to production-grade cluster operations. Each step combines concept documentation, guided labs, and working demos so you learn by doing.
 
-| Step | Topic | Level | Duration |
-|------|-------|-------|----------|
-| 01 | Fundamentals & Architecture | Beginner | 2-3 hours |
-| 02 | Setup Environment | Beginner | 1-2 hours |
-| 03 | Pods | Beginner | 2-3 hours |
-| 04 | ReplicaSets | Beginner | 1-2 hours |
-| 05 | Deployments | Intermediate | 3-4 hours |
-| 06 | Services | Intermediate | 3-4 hours |
-| 07 | ConfigMaps & Secrets | Intermediate | 2-3 hours |
-| 08 | Volumes & Storage | Intermediate | 2-3 hours |
-| 09 | Namespaces | Intermediate | 1-2 hours |
-| 10 | Helm Package Manager | Intermediate | 3-4 hours |
-| 11 | Networking & Ingress | Advanced | 4-5 hours |
-| 12 | Observability | Advanced | 4-5 hours |
-| 13 | Security & RBAC | Advanced | 3-4 hours |
-| 14 | Advanced Patterns | Expert | 5-6 hours |
-| 15 | Production Ready | Expert | 5-6 hours |
+## Table of Contents
 
-## How to Use This Repo
+- [Learning Path](#learning-path)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Repository Structure](#repository-structure)
+- [How to Use This Repository](#how-to-use-this-repository)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. **Start from Step 01** - Each step builds on the previous
-2. **Read the README** in each folder to understand the concepts
-3. **Complete the Labs** - Hands-on exercises to practice
-4. **Run the Demos** - Working examples you can execute
-5. **Break things intentionally** - Best way to learn!
-6. **Move to the next step** only after comfortable
+## Learning Path
+
+| Step | Topic | Level | Estimated Duration |
+|------|-------|-------|--------------------|
+| [01](01-fundamentals) | Fundamentals & Architecture | Beginner | 2-3 hours |
+| [02](02-setup-environment) | Setup Environment | Beginner | 1-2 hours |
+| [03](03-pods) | Pods | Beginner | 2-3 hours |
+| [04](04-replicasets) | ReplicaSets | Beginner | 1-2 hours |
+| [05](05-deployments) | Deployments | Intermediate | 3-4 hours |
+| [06](06-services) | Services | Intermediate | 3-4 hours |
+| [07](07-configmaps-secrets) | ConfigMaps & Secrets | Intermediate | 2-3 hours |
+| [08](08-volumes-storage) | Volumes & Storage | Intermediate | 2-3 hours |
+| [09](09-namespaces) | Namespaces | Intermediate | 1-2 hours |
+| [10](10-helm-package-manager) | Helm Package Manager | Intermediate | 3-4 hours |
+| [11](11-networking-ingress) | Networking & Ingress | Advanced | 4-5 hours |
+| [12](12-observability) | Observability | Advanced | 4-5 hours |
+| [13](13-security-rbac) | Security & RBAC | Advanced | 3-4 hours |
+| [14](14-advanced-patterns) | Advanced Patterns | Expert | 5-6 hours |
+| [15](15-production-ready) | Production Ready | Expert | 5-6 hours |
 
 ## Prerequisites
 
-- Basic Linux/command line knowledge
-- Docker basics (helpful but not required for early steps)
-- A computer with 4GB+ RAM (8GB recommended)
-- internet connection
+Before you begin, make sure you have:
 
-## Quick Start
+- Basic knowledge of the command line and Linux fundamentals
+- Working knowledge of Docker (helpful for later steps, not required early on)
+- A machine with at least 4GB of RAM (8GB recommended)
+- A stable internet connection
+
+## Getting Started
 
 ```bash
-# Clone this repo
+# Clone the repository
 git clone <repo-url>
 cd kubernetes-mastery
 
-# Start with Step 01
+# Start with Step 01: Fundamentals & Architecture
 cd 01-fundamentals
 cat README.md
 ```
 
-## Folder Structure
+## Repository Structure
 
-Each step follows this structure:
+Each step follows a consistent structure:
+
 ```
 XX-topic/
 ├── README.md          # Concepts & theory
@@ -63,9 +69,24 @@ XX-topic/
     └── *.sh
 ```
 
+## How to Use This Repository
+
+1. **Start from Step 01** - Each step builds on the knowledge from the previous one.
+2. **Read the step README** - Understand the concepts before touching the cluster.
+3. **Complete the labs** - Hands-on exercises reinforce what you've learned.
+4. **Run the demos** - Working examples you can execute and inspect.
+5. **Break things intentionally** - Breaking and fixing is one of the best ways to learn.
+6. **Move on when you're comfortable** - Don't rush; pace yourself.
+
 ## Contributing
 
-Found an issue or want to improve a demo? PRs welcome!
+Contributions are welcome! If you find an issue, want to improve a demo, or have an idea for a new lab:
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+Please keep changes consistent with the existing structure and style.
 
 ## License
 
